@@ -41,16 +41,15 @@ ax_scatter.set_xlim(-3, 3)
 ax_scatter.set_ylim(-3, 3)
 
 
-sns.histplot(data['Y'], ax=ax_histx, kde=True, color="blueviolet")
-#ax_histx.set_title('Multivariate Drift')
+sns.histplot(data['X'], ax=ax_histx, kde=True, color="blueviolet")
 ax_histx.set_xlim(-3, 3)
 ax_histx.set_xlabel('')
 ax_histx.set_ylabel('Distribution of X')
 
 
-sns.histplot(y=data['Z'], ax=ax_histy, kde=True, color="fuchsia")
+sns.histplot(y=data['Y'], ax=ax_histy, kde=True, color="fuchsia")
 ax_histy.set_ylim(-3, 3)
-ax_histy.set_xlabel('Distribution of X')
+ax_histy.set_xlabel('Distribution of Y')
 
 
 ax[0, 1].axis('off')
